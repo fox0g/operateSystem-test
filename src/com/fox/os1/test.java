@@ -64,5 +64,7 @@ public class test {
         System.out.println("平均带权周转时间:"+sum2/JCBArr.size());
         System.out.println("------------------");
         System.out.println("master test");
+        System.out.println("hot-fix test");
+
     }
 }
