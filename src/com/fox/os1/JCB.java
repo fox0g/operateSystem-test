@@ -8,7 +8,7 @@ package com.fox.os1;
  */
 public class JCB {
 
-    public int priority;
+
 
 
     public double TAT;
@@ -20,12 +20,20 @@ public class JCB {
     public double arriveTime;//提交时间
     public double workTime;//运行时间
     public String status = "W";//状态
+    public int priority = 0;
 
     public double beginTime;
     public double finishTime;
 
     public JCB(){
 
+    }
+    public JCB(int id,String name,double arriveTime,double workTime,int priority){
+        this.id = id;
+        this.name = name;
+        this.arriveTime = arriveTime;
+        this.workTime = workTime;
+        this.priority = priority;
     }
 
     public JCB(int id,String name,double arriveTime,double workTime){
@@ -66,6 +74,12 @@ public class JCB {
     public void setStatus(String status){
         this.status = status;
     }
+    public int getPriority(){
+        return priority;
+    }
+    public void setPriority(int priority){
+        this.priority = priority;
+    }
 
 
     public double getBeginTime(){
@@ -80,5 +94,6 @@ public class JCB {
     public void setFinishTime(double finishTime){
         this.finishTime = finishTime;
     }
+
 
 }
